@@ -68,10 +68,11 @@ RUN \
     /var/lib/apt/lists/* \
     /var/tmp/* \
     $HOME/.cache
+    
+RUN curl https://rclone.org/install.sh | bash
 
 # add local files
 COPY root/ /
 
 # ports and volumes
-EXPOSE 8080 9090
 VOLUME /config
