@@ -9,8 +9,8 @@ services:
       - TZ=Europe/London
     volumes:
       - /.portainer/Files/AppData/Config/Sabnzbd:/config
-      - /path/to/downloads:/downloads #optional
-      - /path/to/incomplete/downloads:/incomplete-downloads #optional
+      - /.portainer/downloads:/downloads #optional
+      - /.portainer/Downloads/incomplete:/incomplete-downloads #optional
     ports:
-      - 8080:8080
+      - 8087:8080
     restart: unless-stopped
