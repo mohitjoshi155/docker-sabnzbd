@@ -1,7 +1,7 @@
 version: "2.1"
 services:
   sabnzbd:
-    build .
+    build: .
     container_name: sabnzbd
     environment:
       - PUID=1000
