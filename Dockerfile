@@ -70,6 +70,7 @@ RUN \
     $HOME/.cache
     
 RUN curl https://rclone.org/install.sh | bash
+RUN pip install pynzbget
 
 # add local files
 COPY root/ /
