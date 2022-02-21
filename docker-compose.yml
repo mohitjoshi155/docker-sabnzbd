@@ -11,6 +11,4 @@ services:
       - /.portainer/Files/AppData/Config/Sabnzbd:/config
       - /.portainer/downloads:/downloads #optional
       - /.portainer/Downloads/incomplete:/incomplete-downloads #optional
-    ports:
-      - 8087:8080
     restart: unless-stopped
